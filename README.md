@@ -35,3 +35,19 @@ whether a client is able to upload folder.
 (v) Allowable Student IDs: List of Student IDs who are allowed to upload files. IDs
 can be specified in range format such as 201005001-20100560 as well as comma
 separated individual IDs such as 200905100, 200805119.  
+
+On the client side, when a user wants to upload a file (by pressing corresponding button in the
+client interface), the client will first request the server to send all the constraints
+configured. After receiving the constraints list, the client will then prompt the user to
+upload files accordingly and present with him a File Dialog box. If the files/folder
+specified by the user mismatch with the constraints, those will be rejected and a warning
+will be showed to the user.
+
+Every file is segmented before transfer by the client where the segment size will
+be maximum 512 bytes. For example, if a file is 1000 bytes, it will be segmented in two
+chunks, the first one is 512 bytes and the next one is 1000-512=488 bytes. The client will
+send each segment according to the following format:  
+File Name::Starting Byte Number::Size of Segment::File Data  
+The server, upon receiving each segment, will send an acknowledgment to the client
+which will cause the client to send the next segment, i.e., each segment is
+individually acknowledged.
