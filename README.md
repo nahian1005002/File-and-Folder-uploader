@@ -1,4 +1,4 @@
-# File-and-Folder-uploader
+# client/server Application
 
 
 On startup, the client program will prompt the user for the server’s ‘IP Address’ and
