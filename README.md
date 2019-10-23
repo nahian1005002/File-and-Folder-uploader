@@ -4,7 +4,7 @@ Summary: Implementation of both client and server sides of a file/folder uploade
 
 Key Concepts: TCP/IP socket programming, message passign protocol, file spliting and sending, receiving in segments.
 
-• Options for user to specify type of upload :
+• Options for user of server side to specify in GUI type of upload :
 
 (i) File Type: This will allow a client to upload file only type/s specified by the
 server, such as .java, .py, .c etc.
@@ -19,4 +19,3 @@ names such as server.java, client.java etc.
 On startup, the client program will prompt the user for the server’s ‘IP Address’ and
 ‘Port Number’ as well as the ‘Student ID’. Then the client will initiate a connection
 request with the server and send the ‘Student ID’.   
-
