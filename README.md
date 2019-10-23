@@ -2,7 +2,7 @@
 
 Summary: Implementation of both client and server sides of a file/folder uploader application with GUI.
 
-Key Concepts: TCP/IP socket programming, message passign protocol, file spliting and sending, receiving in segments.
+Key Concepts: TCP/IP socket programming, message passing protocol, file spliting and sending, receiving in segments.
 
 • Options for user of server side to specify in GUI type of upload :
 
