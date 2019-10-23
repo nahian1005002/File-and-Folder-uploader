@@ -4,8 +4,7 @@ Summary: Implementation of both client and server sides of a file/folder uploade
 
 Key Concepts: TCP/IP socket programming, message passign protocol, file spliting and sending, receiving in segments.
 
-• Clients will be able to upload file only according to the constraints specified by the
-server. The mandatory constraints to be implemented are as follows.
+• Options for user to specify type of upload :
 (i) File Type: This will allow a client to upload file only type/s specified by the
 server, such as .java, .py, .c etc.
 (ii) Single file/ multiple files/ folder: whether client will be able to upload single or
