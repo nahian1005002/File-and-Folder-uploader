@@ -1,5 +1,6 @@
 # client/server Application
 
+Summary: Implementation of both client and server sides of a file/folder uploader application with GUI using TCP/IP socket programming.
 
 On startup, the client program will prompt the user for the server’s ‘IP Address’ and
 ‘Port Number’ as well as the ‘Student ID’. Then the client will initiate a connection
